@@ -7,7 +7,7 @@ use yii\db\Migration;
 /**
  * Class M230917140818CreatecmsModulePasswordsStore
  */
-class M230917141131CreatecmsModulePasswordsStore extends Migration
+class M230917141131CreateCmsModulePasswordsStore extends Migration
 {
     /**
      * {@inheritdoc}
