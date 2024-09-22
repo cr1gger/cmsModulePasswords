@@ -1,9 +1,9 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\models\forms;
+namespace app\modules\control\modules\cmsModulePasswords\models\forms;
 
-use app\modules\control\modules\passwordManager\models\PmStore;
-use app\modules\control\modules\passwordManager\services\CategoryService;
+use app\modules\control\modules\cmsModulePasswords\models\PmStore;
+use app\modules\control\modules\cmsModulePasswords\services\CategoryService;
 use Yii;
 
 class CreatePmStoreForm extends \yii\base\Model

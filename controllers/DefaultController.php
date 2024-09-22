@@ -1,14 +1,14 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\controllers;
+namespace app\modules\control\modules\cmsModulePasswords\controllers;
 
-use app\modules\control\modules\passwordManager\models\PmStore;
+use app\modules\control\modules\cmsModulePasswords\models\PmStore;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 
 /**
- * Default controller for the `passwordManager` module
+ * Default controller for the `cmsModulePasswords` module
  */
 class DefaultController extends Controller
 {

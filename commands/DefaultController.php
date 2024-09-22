@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\commands;
+namespace app\modules\control\modules\cmsModulePasswords\commands;
 
 class DefaultController extends \yii\console\Controller
 {

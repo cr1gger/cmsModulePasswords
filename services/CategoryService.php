@@ -1,9 +1,9 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\services;
+namespace app\modules\control\modules\cmsModulePasswords\services;
 
 
-use app\modules\control\modules\passwordManager\models\PmCategory;
+use app\modules\control\modules\cmsModulePasswords\models\PmCategory;
 use yii\base\StaticInstanceInterface;
 use yii\base\StaticInstanceTrait;
 

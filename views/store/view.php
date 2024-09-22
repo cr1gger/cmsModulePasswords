@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /** @var yii\web\View $this */
-/** @var app\modules\control\modules\passwordManager\models\PmStore $model */
+/** @var app\modules\control\modules\cmsModulePasswords\models\PmStore $model */
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Pm Stores', 'url' => ['index']];

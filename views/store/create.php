@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var app\modules\control\modules\passwordManager\models\PmStore $model */
+/** @var app\modules\control\modules\cmsModulePasswords\models\PmStore $model */
 
 $this->title = 'Создать пароль';
 $this->params['breadcrumbs'][] = ['label' => 'Список паролей', 'url' => ['index']];

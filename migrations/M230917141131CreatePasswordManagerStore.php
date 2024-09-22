@@ -1,13 +1,13 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\migrations;
+namespace app\modules\control\modules\cmsModulePasswords\migrations;
 
 use yii\db\Migration;
 
 /**
- * Class M230917140818CreatePasswordManagerStore
+ * Class M230917140818CreatecmsModulePasswordsStore
  */
-class M230917141131CreatePasswordManagerStore extends Migration
+class M230917141131CreatecmsModulePasswordsStore extends Migration
 {
     /**
      * {@inheritdoc}
@@ -58,7 +58,7 @@ class M230917141131CreatePasswordManagerStore extends Migration
 
     public function down()
     {
-        echo "M230917140818CreatePasswordManagerStore cannot be reverted.\n";
+        echo "M230917140818CreatecmsModulePasswordsStore cannot be reverted.\n";
 
         return false;
     }

@@ -1,8 +1,8 @@
 <?php
 
-use app\modules\control\modules\passwordManager\assets\ClipboardAssets;
-use app\modules\control\modules\passwordManager\assets\CryptoAssets;
-use app\modules\control\modules\passwordManager\models\PmStore;
+use app\modules\control\modules\cmsModulePasswords\assets\ClipboardAssets;
+use app\modules\control\modules\cmsModulePasswords\assets\CryptoAssets;
+use app\modules\control\modules\cmsModulePasswords\models\PmStore;
 use hail812\adminlte3\yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\helpers\Url;
@@ -15,7 +15,7 @@ $this->title = 'Папка: ' . $category->name;
 <div class="container-fluid">
     <div class="row">
         <div class="btn-group">
-            <a href="/control/passwordManager/store" class="btn btn-outline-success">Список папок</a>
+            <a href="/control/cmsModulePasswords/store" class="btn btn-outline-success">Список папок</a>
             <?php if (!$dataProvider->totalCount): ?>
                 <a href="<?=Url::to(['store/remove-folder', 'id' => $category->id])?>" class="btn btn-outline-danger">Удалить пустую папку</a>
             <?php endif; ?>

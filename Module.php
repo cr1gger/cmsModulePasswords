@@ -1,20 +1,20 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager;
+namespace app\modules\control\modules\cmsModulePasswords;
 
 use app\modules\control\interfaces\ModuleInterface;
 use yii\base\BootstrapInterface;
 use Yii;
 
 /**
- * passwordManager module definition class
+ * cmsModulePasswords module definition class
  */
 class Module extends \yii\base\Module implements BootstrapInterface, ModuleInterface
 {
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'app\modules\control\modules\passwordManager\controllers';
+    public $controllerNamespace = 'app\modules\control\modules\cmsModulePasswords\controllers';
 
     /**
      * {@inheritdoc}
@@ -33,7 +33,7 @@ class Module extends \yii\base\Module implements BootstrapInterface, ModuleInter
     public function bootstrap($app)
     {
         if ($app instanceof \yii\console\Application) {
-            $this->controllerNamespace = 'app\modules\control\modules\passwordManager\commands';
+            $this->controllerNamespace = 'app\modules\control\modules\cmsModulePasswords\commands';
         }
     }
 
@@ -53,7 +53,7 @@ class Module extends \yii\base\Module implements BootstrapInterface, ModuleInter
         return [
             'label' => self::getName(),
             'icon' => 'th',
-            'url' => ['/control/passwordManager'],
+            'url' => ['/control/cmsModulePasswords'],
             'visible' => true,
             'target' => '_self',
             'iconStyle' => 'fas',
@@ -75,8 +75,8 @@ class Module extends \yii\base\Module implements BootstrapInterface, ModuleInter
             [
                 'label' => 'Список паролей',
                 'icon' => 'file-code',
-                'url' => ['/control/passwordManager/store'],
-                'active' => $route === 'control/passwordManager/store/index',
+                'url' => ['/control/cmsModulePasswords/store'],
+                'active' => $route === 'control/cmsModulePasswords/store/index',
                 'iconClass' => 'nav-icon fas fa-list',
 
             ]

@@ -1,13 +1,13 @@
 <?php
 
-use app\modules\control\modules\passwordManager\assets\CryptoAssets;
-use app\modules\control\modules\passwordManager\services\CategoryService;
+use app\modules\control\modules\cmsModulePasswords\assets\CryptoAssets;
+use app\modules\control\modules\cmsModulePasswords\services\CategoryService;
 use kartik\select2\Select2;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /** @var yii\web\View $this */
-/** @var \app\modules\control\modules\passwordManager\models\forms\CreatePmStoreForm $model */
+/** @var \app\modules\control\modules\cmsModulePasswords\models\forms\CreatePmStoreForm $model */
 /** @var yii\widgets\ActiveForm $form */
 CryptoAssets::register($this);
 

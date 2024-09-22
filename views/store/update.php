@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
-/** @var \app\modules\control\modules\passwordManager\models\forms\CreatePmStoreForm $modelForm */
+/** @var \app\modules\control\modules\cmsModulePasswords\models\forms\CreatePmStoreForm $modelForm */
 
 $this->title = 'Update Pm Store: ' . $modelForm->model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Pm Stores', 'url' => ['index']];

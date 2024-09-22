@@ -1,12 +1,12 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\assets;
+namespace app\modules\control\modules\cmsModulePasswords\assets;
 
 use yii\web\AssetBundle;
 
 class ClipboardAssets extends AssetBundle
 {
-    public $sourcePath = '@control/modules/passwordManager/web';
+    public $sourcePath = '@control/modules/cmsModulePasswords/web';
 
     public $jsOptions = ['position' => \yii\web\View::POS_END];
 

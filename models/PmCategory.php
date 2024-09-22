@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\models;
+namespace app\modules\control\modules\cmsModulePasswords\models;
 
 use app\common\models\User;
 use Yii;

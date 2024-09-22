@@ -1,11 +1,11 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\controllers;
+namespace app\modules\control\modules\cmsModulePasswords\controllers;
 
-use app\modules\control\modules\passwordManager\models\forms\CreatePmStoreForm;
-use app\modules\control\modules\passwordManager\models\PmCategory;
-use app\modules\control\modules\passwordManager\models\PmStore;
-use app\modules\control\modules\passwordManager\services\CategoryService;
+use app\modules\control\modules\cmsModulePasswords\models\forms\CreatePmStoreForm;
+use app\modules\control\modules\cmsModulePasswords\models\PmCategory;
+use app\modules\control\modules\cmsModulePasswords\models\PmStore;
+use app\modules\control\modules\cmsModulePasswords\services\CategoryService;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;

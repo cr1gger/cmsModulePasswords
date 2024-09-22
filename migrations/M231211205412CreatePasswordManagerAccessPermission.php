@@ -1,13 +1,13 @@
 <?php
 
-namespace app\modules\control\modules\passwordManager\migrations;
+namespace app\modules\control\modules\cmsModulePasswords\migrations;
 
 use yii\db\Migration;
 
 /**
- * Class M231211205412CreatePasswordManagerAccessPermission
+ * Class M231211205412CreatecmsModulePasswordsAccessPermission
  */
-class M231211205412CreatePasswordManagerAccessPermission extends Migration
+class M231211205412CreatecmsModulePasswordsAccessPermission extends Migration
 {
     /**
      * {@inheritdoc}
@@ -27,7 +27,7 @@ class M231211205412CreatePasswordManagerAccessPermission extends Migration
      */
     public function safeDown()
     {
-        echo "M231211205412CreatePasswordManagerAccessPermission cannot be reverted.\n";
+        echo "M231211205412CreatecmsModulePasswordsAccessPermission cannot be reverted.\n";
 
         return false;
     }
@@ -41,7 +41,7 @@ class M231211205412CreatePasswordManagerAccessPermission extends Migration
 
     public function down()
     {
-        echo "M231211205412CreatePasswordManagerAccessPermission cannot be reverted.\n";
+        echo "M231211205412CreatecmsModulePasswordsAccessPermission cannot be reverted.\n";
 
         return false;
     }
