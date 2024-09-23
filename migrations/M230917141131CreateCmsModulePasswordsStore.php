@@ -2,12 +2,12 @@
 
 namespace app\modules\control\modules\cmsModulePasswords\migrations;
 
-use yii\db\Migration;
+use app\common\migrations\BaseMigration;
 
 /**
  * Class M230917140818CreatecmsModulePasswordsStore
  */
-class M230917141131CreateCmsModulePasswordsStore extends Migration
+class M230917141131CreateCmsModulePasswordsStore extends BaseMigration
 {
     /**
      * {@inheritdoc}
@@ -22,9 +22,9 @@ class M230917141131CreateCmsModulePasswordsStore extends Migration
             'updated_at' => $this->dateTime(),
         ]);
 
-        $this->addForeignKey('fk-category-user', 'pm_category', 'owner', 'user', 'id', 'CASCADE', 'CASCADE');
+        $this->addForeignKey('fk-category-user', '{{%pm_category}}', 'owner', 'user', 'id', 'CASCADE', 'CASCADE');
 
-        $this->createTable('pm_store', [
+        $this->createTable('{{%pm_store}}', [
             'id' => $this->primaryKey(),
             'owner' => $this->integer()->notNull(),
             'category_id' => $this->integer()->notNull(),
@@ -36,8 +36,8 @@ class M230917141131CreateCmsModulePasswordsStore extends Migration
             'updated_at' => $this->dateTime(),
         ]);
 
-        $this->addForeignKey('fk-category_id', 'pm_store', 'category_id', 'pm_category', 'id', 'CASCADE', 'CASCADE');
-        $this->addForeignKey('fk-owner-user', 'pm_store', 'owner', 'user', 'id', 'CASCADE', 'CASCADE');
+        $this->addForeignKey('fk-category_id', '{{%pm_store}}', 'category_id', '{{%pm_category}}', 'id', 'CASCADE', 'CASCADE');
+        $this->addForeignKey('fk-owner-user', '{{%pm_store}}', 'owner', 'user', 'id', 'CASCADE', 'CASCADE');
     }
 
     /**
@@ -45,8 +45,8 @@ class M230917141131CreateCmsModulePasswordsStore extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('pm_store');
-        $this->dropTable('pm_category');
+        $this->dropTable('{{%pm_store}}');
+        $this->dropTable('{{%pm_category}}');
     }
 
     /*

@@ -2,6 +2,7 @@
 
 namespace app\modules\control\modules\cmsModulePasswords;
 
+use app\modules\control\helpers\ControlHelper;
 use app\modules\control\interfaces\ModuleInterface;
 use yii\base\BootstrapInterface;
 use Yii;
@@ -9,8 +10,9 @@ use Yii;
 /**
  * cmsModulePasswords module definition class
  */
-class Module extends \yii\base\Module implements BootstrapInterface, ModuleInterface
+class Module extends \yii\base\Module implements ModuleInterface
 {
+    public const DB_PREFIX = "passwd_";
     /**
      * {@inheritdoc}
      */
@@ -25,16 +27,13 @@ class Module extends \yii\base\Module implements BootstrapInterface, ModuleInter
             throw new \yii\web\ForbiddenHttpException('Доступ запрещен');
         }
 
+        if (ControlHelper::isConsoleApp()) {
+            $this->controllerNamespace = 'app\modules\control\modules\cmsModulePasswords\commands';
+        }
+
         parent::init();
 
         // здесь находится пользовательский код инициализации
-    }
-
-    public function bootstrap($app)
-    {
-        if ($app instanceof \yii\console\Application) {
-            $this->controllerNamespace = 'app\modules\control\modules\cmsModulePasswords\commands';
-        }
     }
 
     /**
@@ -88,6 +87,10 @@ class Module extends \yii\base\Module implements BootstrapInterface, ModuleInter
      */
     public static function canAccess(): bool
     {
-        return Yii::$app->user->can('control.password-manager.access');
+        if (!ControlHelper::isConsoleApp()) {
+            return Yii::$app->user->can('control.password-manager.access');
+        }
+
+        return true;
     }
 }
