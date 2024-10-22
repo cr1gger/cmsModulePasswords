@@ -2,12 +2,13 @@
 
 namespace app\modules\control\modules\cmsModulePasswords\migrations;
 
-use app\common\migrations\BaseMigration;
+
+use yii\db\Migration;
 
 /**
  * Class M230917140818CreatecmsModulePasswordsStore
  */
-class M230917141131CreateCmsModulePasswordsStore extends BaseMigration
+class M230917141131CreateCmsModulePasswordsStore extends Migration
 {
     /**
      * {@inheritdoc}

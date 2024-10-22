@@ -2,12 +2,12 @@
 
 namespace app\modules\control\modules\cmsModulePasswords\migrations;
 
-use app\common\migrations\BaseMigration;
+use yii\db\Migration;
 
 /**
  * Class M231211205412CreatecmsModulePasswordsAccessPermission
  */
-class M231211205412CreateCmsModulePasswordsAccessPermission extends BaseMigration
+class M231211205412CreateCmsModulePasswordsAccessPermission extends Migration
 {
     /**
      * {@inheritdoc}
